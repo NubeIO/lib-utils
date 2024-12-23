@@ -369,3 +369,10 @@ func SplitIntoGroups(s []string, size int) [][]string {
 
 	return result
 }
+
+func SplitIfNotEmpty(input string, delimiter string) []string {
+	if input == "" {
+		return make([]string, 0)
+	}
+	return strings.Split(input, delimiter)
+}
